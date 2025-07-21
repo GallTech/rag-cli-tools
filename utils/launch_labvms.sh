@@ -8,7 +8,7 @@ VMS=(
   "lab-1-ingestion:192.168.0.13"
   "lab-1-ui:192.168.0.14"
   "lab-1-api:192.168.0.15"
-  "lab-1-PyTorch:191.168.0.16"
+  "lab-1-PyTorch:192.168.0.16"
 )
 
 USERNAME="mike"
