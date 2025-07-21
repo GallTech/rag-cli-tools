@@ -29,7 +29,7 @@ FIRST_VM="${VMS[0]}"
 NAME="${FIRST_VM%%:*}"
 IP="${FIRST_VM##*:}"
 
-echo "🚀 Opening WezTerm with $NAME..."
+echo "Opening WezTerm with $NAME..."
 wezterm start -- ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null "$USERNAME@$IP" &
 
 # Wait for the window to initialize and get its ID
@@ -37,7 +37,7 @@ sleep 2
 WINDOW_ID=$(get_window_id)
 
 if [[ -z "$WINDOW_ID" ]]; then
-  echo "❌ Failed to get WezTerm window ID"
+  echo "Failed to get WezTerm window ID"
   exit 1
 fi
 
@@ -51,4 +51,4 @@ for vm in "${VMS[@]:1}"; do
   sleep 0.3  # Small delay between tab openings
 done
 
-echo "🎉 All VMs opened in WezTerm!"
+echo "All VMs opened in WezTerm!"
