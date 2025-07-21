@@ -1,0 +1,14 @@
+# System files
+.DS_Store
+*.swp
+*~
+
+# Binaries/compiled files
+/bin/
+*.exe
+*.pyc
+
+# Secrets
+.env
+*.key
+*.pem
