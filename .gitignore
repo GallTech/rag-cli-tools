@@ -12,3 +12,6 @@
 .env
 *.key
 *.pem
+
+# random
+StartFloorp.sh
